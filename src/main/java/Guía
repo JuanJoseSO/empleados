@@ -1,0 +1,15 @@
+1º. Añadimos las dependencias en el pom.xml para trabajar con JSP y JSTL.
+2º. Configuramos la conexión a la BD desde application.properties.
+3º. Pegamos el log-back para formatear la información por consola.
+4º. Añadimos la carpeta de webapp al mismo nivel que la carpeta java. Aquí irán nuestros jps's.
+     Creamos la carpeta WEB-IF dentro, y dentro de esta la carpeta jsp.
+5º. Creamos la clase entidad utilizando jpa y lombock, en el paquete modelo
+6º. Creamos el paquete repositorio con la Interfaz que implementa JPARepository. Esto nos da métodos para
+     tratar la información como listar empleados,guardar,eliminar,agregar...
+5º. Creamos el paquete servicio con su interfaz y clase para acceder a los métodos del repository. La clase
+     debe llevar la anotación @Service.
+6º. Creamos el paquete y la clase controlador con su anotación @Controlador.
+8º. En index.html pegamos el head el link a boostrap y al final del body su scrip. Sacando ambos de boostrap.
+        Además, usamos un nav-bar y una tabla de la misma página.
+9º. Configuramos desde el controlador enviar la tabla a la vista y añadimos utf8 al index.jsp para poner "€".
+10.º Creamos el jsp agregar y el método para agregar usuarios en el controlador.
